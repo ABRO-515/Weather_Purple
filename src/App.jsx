@@ -56,6 +56,8 @@ const App = () => {
   const handleFormSubmit = (e) => {
     e.preventDefault();
     fetchWeather(city, '');
+setCitySuggestions([]) // make it clear after you have selected using keyboard or clicked the button search
+
   };
 
   const handleCitySelect = (selectedCity) => {
